@@ -9,7 +9,7 @@ function [] = FindOptimizationTreesandLeaf(Num,Type,Input_train,Output_train,Max
 % nTree = Output_2; % Not added yet
 
 % Num = Input_1;    % Number of cycles
-% (未添加） RFLeaf = Input_2;   % The default is 1, at this time: RFLeaf=[5,10,20,50,100,200,500];
+% (Not added yet) RFLeaf = Input_2;   % The default is 1, at this time: RFLeaf=[5,10,20,50,100,200,500];
 %                               % If you need to modify it, you need to modify the plot part of the function by yourself.
 % Type = Input_2; Type=1,classification; 
 %                 Type=2,regression;
