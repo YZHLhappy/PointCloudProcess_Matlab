@@ -5,18 +5,18 @@
 % Modify record: 2021.11.22 Create this function
 
 function [] = FindOptimizationTreesandLeaf(Num,Type,Input_train,Output_train,MaxNumTree)
-% nLeaf = Output_1; % Not added yet
-% nTree = Output_2; % Not added yet
+% nLeaf = Output_1; Not added yet
+% nTree = Output_2; Not added yet
 
-% Num = Input_1;    % Number of cycles
-% (Not added yet) RFLeaf = Input_2;   % The default is 1, at this time: RFLeaf=[5,10,20,50,100,200,500];
-%                               % If you need to modify it, you need to modify the plot part of the function by yourself.
+% Num = Input_1; Number of cycles
+% (Not added yet) RFLeaf = Input_2; The default is 1, at this time: RFLeaf=[5,10,20,50,100,200,500];
+%                                   If you need to modify it, you need to modify the plot part of the function by yourself.
 % Type = Input_2; Type=1,classification; 
 %                 Type=2,regression;
-% Input_train = Input_3;  % The independent variable part of the training data
-% Output_train = Input_4; % The label part of the training data (classification)
-%                         % Regression part of the training data (regression)
-% MaxNumTree = Input_5;   % Set the maximum number of trees (for example, 2000, this function will test the corresponding error value of 1 to 2000 trees)
+% Input_train = Input_3; The independent variable part of the training data
+% Output_train = Input_4; The label part of the training data (classification)
+%                         Regression part of the training data (regression)
+% MaxNumTree = Input_5; Set the maximum number of trees (for example, 2000, this function will test the corresponding error value of 1 to 2000 trees)
 for RFOptimizationNum=1:Num
 
 RFLeaf=[5,10,20,50,100,200,500];

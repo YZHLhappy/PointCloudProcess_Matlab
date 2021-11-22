@@ -2,7 +2,7 @@
 % Created time: 2021.11.22
 % Author: YZHL
 % Modify record: 2021.11.22 Create this code
-% % Reference：https://zhuanlan.zhihu.com/p/367491476，Most of the programs refer to this article,thank the author of the article.
+% Reference：https://zhuanlan.zhihu.com/p/367491476，Most of the programs refer to this article,thank the author of the article.
 
 clear all;
 close all;
@@ -59,7 +59,7 @@ Output_test = abalonetest_Y;
 % Cycle Preparation
 RFScheduleBar=waitbar(0,'Random Forest is Solving...');
 RFRMSEMatrix=[];
-RFrAllMatrix=[]
+RFrAllMatrix=[];
 RFRunNumSet=500;  % Set the whole process to loop 500 times.
 for RFCycleRun=1:RFRunNumSet
 
@@ -94,8 +94,8 @@ str=['Random Forest is Solving...',num2str(100*RFCycleRun/RFRunNumSet),'%'];
 waitbar(RFCycleRun/RFRunNumSet,RFScheduleBar,str);
 end
 close(RFScheduleBar);
-%% Variable Importance Contrast
 
+%% Variable Importance Contrast
 VariableImportanceX={};
 XNum=1;
 % for TifFileNum=1:length(TifFileNames)
