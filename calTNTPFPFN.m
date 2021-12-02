@@ -8,15 +8,18 @@ function [TP,TN,FP,FN] = calTNTPFPFN(label_ref,label_pre,label)
 % author:YZHLhappy
 
 % This function is used to calculate the values of TP, TN, FP, FN.
+
+% Input: label_ref,label_pre,label
+% label_ref: the value of the reference label
+% label_pre: the value of the predicted label
+% label: the label used as a benchmark
+
+% Output: TP,TN,FP,FN
 % TP: True Positive
 % FN: False Negative
 % FP: False Positive
 % TN: True Negative
-% Input: label_ref,label_pre,label
-% Output: TP,TN,FP,FN
-% label_ref: the value of the reference label
-% label_pre: the value of the predicted label
-% label: the label used as a benchmark
+
 
 for i=1:length(label_ref)
     if (label_ref(i)==label)
