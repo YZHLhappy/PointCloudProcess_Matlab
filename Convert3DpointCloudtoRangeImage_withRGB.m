@@ -36,11 +36,11 @@ for i=1:length(x)
     theta(i) = rad2deg(atan2(z(i),r));
 end
 
-alpha_l = min(alpha); yr = max(alpha);
-theta_l = min(theta); zr = max(theta);
+alpha_min = min(alpha); alpha_max = max(alpha);
+theta_min = min(theta); theta_max = max(theta);
 
-alphaAlpha = linspace(alpha_l,yr,numc);
-thetaTheta = linspace(theta_l,zr,numr);
+alphaAlpha = linspace(alpha_min,alpha_max,numc);
+thetaTheta = linspace(theta_min,theta_max,numr);
 [ALPHA,THETA] = meshgrid(alphaAlpha,thetaTheta);
 grid_centers = [ALPHA(:),THETA(:)];
 
