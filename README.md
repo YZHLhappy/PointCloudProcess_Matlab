@@ -3,6 +3,7 @@
 - Created time: 2021.11.22
 - Author: YZHLhappy
 - Modify record: 2021.11.22 Create this repository
+-                2021.12.15 Add program description
 
 Program explanation：
   1. Anisotropy: used to calculate the value of point cloud feature anisotropy.
