@@ -6,9 +6,9 @@ function [TP,TN,FP,FN] = calTNTPFPFN(label_ref,label_pre,label)
 % MATLAB Central File Exchange. Retrieved December 2, 2021.
 % Improvement: Expand the value range to any value (no longer just 0 and 1)
 % author:YZHLhappy
-
+%--------------------------------------------------------------------------
 % This function is used to calculate the values of TP, TN, FP, FN.
-
+%--------------------------------------------------------------------------
 % Input: label_ref,label_pre,label
 % label_ref: the value of the reference label
 % label_pre: the value of the predicted label
