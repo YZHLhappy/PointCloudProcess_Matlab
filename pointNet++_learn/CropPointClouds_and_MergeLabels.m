@@ -54,7 +54,7 @@ if writeFiles                                                              % 判
 %         labels = labels(labels~=0);
 % 2021.12.18 其实也可以加上，将没有标注的数据进行剔除，因为有些数据确实不知如何标注。
 %--------------------------------------------------------------------------
-        weights = weights + CalculateWeights(labels,numClasses);     % 累加每个点云文件中的weights
+        weights = weights + CalculateWeights(labels,numClasses);           % 累加每个点云文件中的weights
 
         % Calculate the number of grids.
         numGridsY = round(diff(pc.YLimits)/gridSize(1));                   % 从X改为Y,修改原因：因为我的数据集从XY方向分割，存在很多没有点的位置，而从YZ方向会好很多
