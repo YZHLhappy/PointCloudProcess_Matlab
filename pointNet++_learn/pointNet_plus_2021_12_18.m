@@ -23,7 +23,7 @@
 %                             1. 载入数据
 %--------------------------------------------------------------------------
 % 1. 载入训练数据的地址
-dataFolder = fullfile('C:\Users\YANG\Desktop\2021.12.15\data_19');         % dataFolder表示存放数据的文件夹地址
+dataFolder = fullfile('C:......');                                         % dataFolder表示存放数据的文件夹地址
 trainDataFolder = fullfile(dataFolder,'train');                            % 存放训练数据的文件夹地址
 testDataFolder = fullfile(dataFolder,'test');                              % 存放测试数据的文件夹地址
 
@@ -121,20 +121,20 @@ if doTraining
     [net, info] = trainNetwork(dsTrain,lgraph,options);
 else
     % Load the pretrained network.
-    load(['C:\Users\YANG\Desktop\2021.12.15\data_19\...' ...
-        'pointNetplus_model_12.17_21Uhr.mat'],'net');
+    load(['..........'],'net');                                            % 不训练，并载入训练好的模型
 end
 toc
 %%
 %--------------------------------------------------------------------------
 %                            4. Test Model
+%--------------------------------------------------------------------------
 % 4.1. 设置分割点云和标注的格式
 numNearestNeighbors = 20;                                                  % 由于点云分割是向下采样的结果，需要将采样后的数据映射回原点云，
                                                                            % 此处设置的值将标签分给这个范围内的点。
 radius = 0.05;
 
-% aa = load("C:\Users\YANG\Desktop\2021.12.15\data_19\test\test_2.txt");
-aa = load("C:\Users\YANG\Desktop\Label(from 12.16)\测试使用\2.txt");       % 载入测试的数据
+% aa = load("............");
+aa = load("...........");                                                  % 载入测试的数据
 pc = pointCloud(aa(:,1:3));                                                % 点云的xyz数据
 l = uint8(aa(:,4));                                                        % 点云的label                                              
 labelsDenseTarget = l;
