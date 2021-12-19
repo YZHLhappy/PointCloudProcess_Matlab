@@ -5,6 +5,7 @@ function [ptCloudPath,labelsPath,weights] = CropPointClouds_and_MergeLabels( ...
 % Reference function: helperCropPointCloudsAndMergeLabels.m
 %                     https://www.mathworks.com/help/lidar/ug/aerial-lidar-segmentation-using-pointnet-network.html
 %                     Aerial Lidar Semantic Segmentation Using PointNet++ Deep Learning
+%                     Copyright 2021 MathWorks, Inc.
 % Improvement: 1. 由于我自己的数据集是txt文件，所以我修改读取程序的部分;
 %              2. 屏蔽了取label=0的点相关语句;
 %              3. 由于我的点云数据不是规则图形（不论在xyz哪个视角下），因此
